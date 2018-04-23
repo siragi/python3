@@ -1,16 +1,26 @@
-#!/usr/bin/python
-# coding: utf-8
+# -*- coding: utf-8 -*-
+""".
 
-# jemand transferiert jemandem eine summe am datum für etwas
+jemand transferiert jemandem eine summe am datum für etwas.
+===========================================================
+ranitrne
+rniaertn
+    raierne
+    trinaertni
 
-import sys, getopt
+"""
+
+
+import sys
+import getopt
 
 
 def main(argv):
+    """Kommentare einlesen."""
     comment = ''
-    
+
     try:
-        opts, args = getopt.getopt(argv,"hc:",["comment="])
+        opts, args = getopt.getopt(argv, "hc:", ["comment="])
     except getopt.GetoptError:
         print(__file__ + ' -c <"Kommentar">')
         sys.exit(2)
@@ -22,18 +32,12 @@ def main(argv):
             comment = arg
         print(arg)
 
-    inputfile = argv[0]	
+    inputfile = argv[0]
     outputfile = argv[1]
-
-        
-##        elif arg != ''
-##
-##        elif && argv[2] == '':
-      
-          
     print("Input file is " + inputfile)
     print("Output file is " + outputfile)
     print("comment is " + comment)
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])
