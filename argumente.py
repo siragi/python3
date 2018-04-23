@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """.
 
 jemand transferiert jemandem eine summe am datum für etwas.
