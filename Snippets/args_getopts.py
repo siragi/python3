@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # -*- coding: utf-8 -*-
 """.
 
@@ -15,7 +16,7 @@ import getopt
 
 
 def main(argv):
-    """trniaetrnae."""
+    """Main Routine, welche inputfile und outputfile printed."""
     inputfile = ''
     outputfile = ''
     try:

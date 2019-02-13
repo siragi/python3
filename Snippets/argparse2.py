@@ -1,13 +1,12 @@
+#!/usr/bin/python3
+# https://docs.python.org/3.5/library/argparse.html
 """.
-
-description='Process some integers.
-    --sum
-        summiert
-    default ist find the max number.
-
+Module argparse creates an object using ArgumentParser to which
+one can add_argument like here:
+    integers, sum
+those arguments can store values and default values if not set.
 """
 import argparse
-
 
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('integers', metavar='N', type=int, nargs='+',
