@@ -4,7 +4,7 @@ from io import UnsupportedOperation
 from builtins import FileNotFoundError, FileExistsError, PermissionError
 
 filename = "testtest"
-modus = "x"
+modus = "r"
 """
 r - (default mode) open the file for reading
 w - open the file for writing, overwriting the content \
@@ -21,8 +21,8 @@ try:
         if modus == 'r':
             print(f.read())
         elif modus == 'w':
-            f.write("some test text")
-            print(f.read())
+            f.write("some test text\ntdriaentriaen\ndtiranetriaen\n")
+            # print(f.read())
         # f.close() is integrated in with statement.
 except FileNotFoundError:
     print("I did not find filename '%s'!" % filename)
